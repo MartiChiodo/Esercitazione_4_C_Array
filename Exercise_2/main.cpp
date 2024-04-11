@@ -72,8 +72,11 @@ int main()
     ofs << "V: " << fixed << setprecision(2) << UtilsLibrary::valore_finale_portfolio(w,r,S,n) << endl;
 
 
+    //chiudo i file e rilascio la memoria
     ifs.close();
     ofs.close();
+    delete [] w;
+    delete [] r;
 
   return 0;
 }
