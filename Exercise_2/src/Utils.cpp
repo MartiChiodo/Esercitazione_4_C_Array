@@ -50,7 +50,7 @@ bool ImportData(const string& nameFile, size_t& n, double& S, double*& w, double
 
         //aggiungo i valori trovati agli array w e r
         w[contatore] = wVAL,
-            r[contatore] = rVAL;
+        r[contatore] = rVAL;
 
         contatore ++;
     }
