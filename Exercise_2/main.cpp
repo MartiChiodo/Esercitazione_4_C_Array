@@ -29,13 +29,18 @@ int main()
 
     //inizio a stampare le prime righe sul file di output
     ofs << "S = " << fixed << setprecision(2) << S << ", n = " << setprecision(0) << n << endl;
+    cout << "S = " << fixed << setprecision(2) << S << ", n = " << setprecision(0) << n << endl;
     //stampo i due array in output
     ofs << "w = " << UtilsLibrary::array_to_stringa(w,n) << endl;
+    cout << "w = " << UtilsLibrary::array_to_stringa(w,n) << endl;
     ofs << "r = " << UtilsLibrary::array_to_stringa(r,n) << endl;
+    cout << "r = " << UtilsLibrary::array_to_stringa(r,n) << endl;
 
     //calcolo il valore finale del portafoglio e l'interesse totale
     ofs << "Rate of return of the portfolio: " << setprecision(4) <<  UtilsLibrary::rate_of_return(w,r,n) << endl;
+    cout << "Rate of return of the portfolio: " << setprecision(4) <<  UtilsLibrary::rate_of_return(w,r,n) << endl;
     ofs << "V: " << fixed << setprecision(2) << UtilsLibrary::valore_finale_portfolio(w,r,S,n) << endl;
+    cout << "V: " << fixed << setprecision(2) << UtilsLibrary::valore_finale_portfolio(w,r,S,n) << endl;
 
 
     //chiudo i file e rilascio la memoria
